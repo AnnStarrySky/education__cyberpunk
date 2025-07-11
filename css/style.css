@@ -114,40 +114,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 70px;
-    animation: bg-change 30s infinite;
 }
-
-@keyframes bg-change{
-    from{
-        background-image: url('/images/hero.png');
-    }
-    
-    15%{
-        background-image: url('/images/hero.png');
-    }
-
-    30%{
-        background-image: url('/images/hero11.png');
-    }
-
-    45%{
-        background-image: url('/images/hero11.png');
-    }
-
-    60%{
-        background-image: url('/images/hero12.png');
-    }
-
-    75%{
-        background-image: url('/images/hero12.png');
-    }
-
-    to{
-        background-image: url('/images/hero.png');
-    }
-
-}
-
 
 .hero__available{
     display: inline-block;
