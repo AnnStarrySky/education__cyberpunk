@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+  }
+  
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+body{
+    font-family: "Roboto" !important;
+    max-width: 1920px;
+    margin: 0 auto;
+    --neon-yellow: #FBF503;
+    --neon-blue: rgb(46, 194, 231);
+    --black-color: #000000;
+    --gray-color: #777777;
+    --white-color: #FFFFFF;
+    
+    
+}
+
+main{
+    overflow: hidden;
+}
+
+img{
+    object-fit: cover;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    padding: 19px 50px;
+    background: var(--black-color);
+    color: var(--neon-yellow);
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: center;
+}
+@font-face{
+    font-family: "Archangelsk";
+    src: url("/fonts/ofont.ru_Archangelsk.ttf");
+}
+
+h2,h3 {
+    font-family: "Archangelsk", sans-serif;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 63.3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.indentation{
+    margin-bottom: 70px;
+}
+
+/*header*/
+
+header{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex: auto;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__social{
+    gap: 40px;
+}
+
+.header__social__link svg{
+    fill: black;
+    transition: 0.5s;
+}
+
+.header__social__link:hover svg{
+    fill: var(--neon-blue);
+}
+
+.header__hero{
+    position: relative;
+    max-width: 100wh;
+    height: 1000px;
+    background-image: url('/images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 70px;
+    animation: bg-change 30s infinite;
+}
+
+@keyframes bg-change{
+    from{
+        background-image: url('/images/hero.png');
+    }
+    
+    15%{
+        background-image: url('/images/hero.png');
+    }
+
+    30%{
+        background-image: url('/images/hero11.png');
+    }
+
+    45%{
+        background-image: url('/images/hero11.png');
+    }
+
+    60%{
+        background-image: url('/images/hero12.png');
+    }
+
+    75%{
+        background-image: url('/images/hero12.png');
+    }
+
+    to{
+        background-image: url('/images/hero.png');
+    }
+
+}
+
+
+.hero__available{
+    display: inline-block;
+    max-width: 624px;
+    padding: 70px;
+    margin-right: 20%;
+    margin-left: auto;
+    border-image: url('/images/border-image-header.svg') 0 20 fill;
+
+}
+
+.available__title{
+    margin-bottom: 25px;
+}
+
+.available__btn{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    border: 3px solid var(--black-color);
+}
+
+.available__btn:hover{
+    border-color: var(--neon-blue);
+    color: var(--neon-blue);
+}
+
+/*about*/
+
+.about__title{
+    margin-bottom: 25px;
+}
+
+.about__descr{
+    max-width: 952px;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: var(--gray-color);
+}
+
+.about__descr-blue{
+    color: var(--neon-blue);
+    font-weight: 700;
+}
+
+.about__cards{
+    gap: 32px;
+}
+
+.cards__left-images{
+    flex-direction: column;
+    gap: 32px;
+}
+.cards__left-images img{
+    max-height: 196px;
+}
+
+.cards__right-images img{
+    max-height: 424px;
+}
+
+/*gallery*/
+
+
+
+
+.gallery__title{
+    margin-bottom: 35px;
+}
+
+.gallery__slider{
+    position: relative;
+    gap: 50px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    
+}
+
+.gallery__item{
+    max-width: 50%;
+}
+
+.slider__arrows button{
+    border-radius: 30px;
+    padding: 10px 30px;
+    border: 3px solid var(--black-color);
+}
+
+.arrows:hover{
+    border-color: var(--neon-blue);
+    color: var(--neon-blue);
+}
+
+.slider__arrows{
+    margin-bottom: 70px;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/*play-and-win*/
+
+.play-and-win{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.play-and-win__invisible{
+    display: none;
+}
+
+.play-and-win{
+    background-color: var(--black-color);
+}
+
+.play-and-win__top-title{
+    padding-top: 15px;
+    gap: 32px;
+    margin-bottom: 25px;
+}
+
+.play-and-win__line{
+    max-height: 70px;
+}
+
+.play-and-win__title{
+    padding-bottom: 14px;
+    color: var(--white-color);
+    align-self: flex-end;
+}
+
+.play-and-win__descr{
+    max-width: 953px;
+    margin-bottom: 98px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    color: var(--white-color);
+}
+
+.play-and-win__descr-blue{
+    color: var(--neon-blue)
+}
+
+.input__wrapper {
+    width: 460px;
+    position: relative;
+    padding: 39px 130px;
+    text-align: center;
+    border-image: url('/images/play-and-win__input-file.svg') 0 fill;
+    margin-bottom: 35px;
+  }
+   
+  .input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .input__file-button{
+    cursor: pointer;
+  }
+
+  .input__file-button-text{
+    margin-bottom: 7px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: var(--white-color);
+  }
+
+  .input__file-button-text-format{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14.06px;
+    color: var(--white-color);
+  }
+
+  
+
+  .info-block__input{
+    display: block;
+    margin-bottom: 35px;
+    border: none;
+    background-color: transparent;
+    width: 460px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--gray-color);
+    color: var(--white-color);
+  }
+
+  .info-block__input::placeholder{
+    color: var(--white-color);
+  }
+
+  .info-block__btn{
+    box-sizing: border-box;
+    max-width: 192px;
+    background: var(--neon-yellow);
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.09px;
+    margin-bottom: 15px;
+    border: 3px solid var(--black-color);
+    transition: 0.5s;
+  }
+
+  .info-block__btn:hover{
+    border-color: var(--neon-blue);
+    color: var(--neon-blue);
+    background-color: var(--black-color);
+  }
+  
+  .info-block__checkbox{
+    color: var(--white-color);
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14.06px;
+  }
+
+  .info-block__input-checkbox{
+    cursor: pointer;
+  }
+
+  .form__image-block img{
+    max-height: 456px;
+  }
+
+/*full-immersion*/
+
+.full-immersion{
+    background-color: var(--neon-yellow);
+    padding: 70px 0;
+}
+
+.full-immersion__block-immersion{
+    gap:35px;
+}
+
+.block-immersion__image{
+    flex-direction: column;
+    gap: 26px;
+}
+
+.block-immersion__image__foto{
+    max-width: 624px
+    
+}
+
+.block-immersion__image__logo{
+    max-width: 540px;
+    align-self: center;
+}
+
+.block-immersion__info-title{
+    margin-bottom: 25px;
+}
+
+.block-immersion__info-descr{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-bottom: 25px;
+}
+
+.block-immersion__info-advant{
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.advant__descr{
+    gap: 10px;
+    align-items: center;
+}
+
+.advant__descr img{
+    width: 32px;
+}
+
+.advant__descr p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+}
+
+.block-immersion__info-btn{
+    border: 3px solid var(--black-color);
+    transition: 0.5s;
+}
+
+.block-immersion__info-btn:hover{
+    border-color: var(--neon-blue);
+    color: var(--neon-blue);
+}
+
+/*buy-the-game*/
+
+
+
+.buy-the-game img{
+    width: 100%;
+    height: 100%;
+}
+
+.buy-the-game__info{
+    padding: 70px 32px;
+    background-color: var(--black-color);
+    width: 100%;
+}
+
+.buy-the-game__info__title{
+    max-width: 624px;
+    margin-bottom: 25px;
+    color: var(--white-color);
+}
+
+.buy-the-game__info__set{
+    flex-direction: column;
+    gap: 15px;
+    color: var(--neon-blue);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    margin-bottom: 70px;
+}
+
+.buy-the-game__info__set p{
+    color: var(--white-color);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+}
+
+.buy-the-game__info__set__item{
+    gap: 10px;
+    align-items: center;
+}
+
+.buy-the-game__info__set__item img{
+    width: 32px;
+}
+
+.buy-the-game__info__descr{
+    gap: 15px;
+    color: var(--neon-blue);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    margin-bottom: 24.85px;
+}
+
+.buy-the-game__info__platform{
+    display: grid;
+    grid-template-columns: 62px 178px;
+    grid-row-gap: 40px;
+    grid-column-gap: 79px;
+}
+
+.buy-the-game__info__platform__select{
+    fill: var(--neon-yellow);
+    transition: 0.5s;
+}
+
+.buy-the-game__info__platform__select:hover{
+    fill: var(--neon-blue);
+    cursor: pointer;
+    outline: 3px solid var(--neon-blue);
+    outline-offset: 5px;
+}
+
+/*footer*/
+
+.footer__top{
+    padding: 13px 0;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer__top__logo{
+    gap: 32px;
+    align-items: center;
+}
+
+.footer__top__license{
+    gap:32px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+}
+
+.footer__end{
+    padding: 13px 0;
+    text-align: center;
+    background: var(--black-color);
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+}
+
+.footer__top__license__link{
+    transition: 0.5;
+    position: relative;
+}
+
+.footer__top__license__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--neon-blue);
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .footer__top__license__link:hover::after {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 1400px) {
+
+    .hero__available{
+        left: 30%;
+    }
+
+    .container {
+        max-width: 952px;
+    }
+
+    .about__cards {
+        flex-direction: column;
+    }
+
+    .cards__left-images{
+        flex-direction: row;
+        
+    }
+
+    .play-and-win__form{
+        gap:100px;
+    }
+
+    .play-and-win__descr{
+        margin-bottom: 50px;
+    }
+
+    .block-immersion__image__foto{
+        max-width: 460px;
+    }
+
+    .block-immersion__image__logo{
+        margin: 0 70px;
+        max-width: 320px;
+        
+    }
+
+    .block-immersion__image{
+        gap: 100px;
+    }
+    
+    .buy-the-game__images{
+        max-width: 35%;
+    }
+
+    .footer__top{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer__top__logo{
+        justify-content: space-between;
+    }
+
+    .footer__top__license{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards__left-images{
+        flex-direction: column;
+    }
+
+    .cards__left-images{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .cards__right-images{
+        text-align: center;
+    }
+
+    .cards__right-images img{
+        width: 75%;
+    }
+    
+    .form__image-block{
+        display: none;
+    }
+
+    .play-and-win__invisible{
+        display: block;
+        width: 400px;
+    }
+
+    .play-and-win__top-title{
+        flex-direction: column;
+    }
+
+    .play-and-win__promo-icon{
+        width: 80px;
+    }
+
+    .play-and-win__title{
+       margin-right: auto;
+    }
+
+    .play-and-win__container{
+        margin-bottom: 20px;
+    }
+
+    .full-immersion__block-immersion {
+        flex-direction: column;
+    }
+
+    .block-immersion__image__foto{
+        width: 350px;
+    }
+
+    .block-immersion__image{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .block-immersion__image__logo{
+        margin: 0;
+    }
+
+    .buy-the-game{
+        flex-direction: column;
+    }
+
+    .buy-the-game__images{
+        max-width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .buy-the-game__info{
+        padding: 70px 128px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        max-width: 668px;
+    }
+
+    .block-immersion__image{
+        gap: 50px;
+    }
+
+    .block-immersion__image__logo{
+        width: 200px;
+    }
+
+    .block-immersion__image{
+        align-items: center;
+    }
+
+    .hero__available{
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 792px) {
+
+    .hero__available{
+        left: 0%;
+        padding: 35px;
+    }
+
+    h2, h3{
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 50.63px;
+    }
+
+    .container {
+        max-width: 500px;
+    }
+
+    .buy-the-game__info{
+        padding: 70px 0;
+    }
+
+    .buy-the-game__info__container{
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .block-immersion__image{
+        justify-content: center;
+    }
+
+    .block-immersion__image__foto{
+        width: 200px;
+    }
+
+    .header {
+        gap: 30px;
+    }
+
+
+}   
+
+@media screen and (max-width: 634px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .hero__available{
+        position: absolute;
+        width: 100%;
+        bottom: -30px;
+    }
+
+    .slider__arrows button{
+        display: flex;
+        box-sizing: border-box;
+        max-height: 40px;
+        font-size: 14px;
+        padding: 0 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .gallery__slider {
+        gap: 15px;
+    }
+
+    .slider__arrows{
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .header__hero{
+        height: 713px;
+    }
+
+    .hero__available{
+       bottom: -5%;
+    }
+
+
+    h2,h3{
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 40.63px;
+    }
+
+    p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    }
+
+    .container, .buy-the-game__info__container {
+        max-width: 296px;
+    }
+
+    .footer__top__logo{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer__top__logo img, .header__logo{
+        height: 60px;
+    }
+
+    .footer__top__license{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    } 
+
+    .footer__end__copyright{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.06px;
+        text-align: center;
+    }
+
+    .play-and-win__form input, .input__wrapper{
+        max-width: 296px;
+    }
+
+    .input__wrapper{
+        padding: 39px 70px;
+    }
+
+    .buy-the-game__images{
+        height: 200px;
+    }
+
+    .play-and-win__promo-icon{
+        width: 50px;
+    }
+
+    .play-and-win__invisible{
+        width: 200px;
+    }
+
+    .block-immersion__image {
+        flex-direction: column;
+    }
+
+    .block-immersion__image__logo{
+        width: 200px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 511px) {
+
+    .header__social{
+        gap: 25px;
+    }
+
+
+    h2,h3 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 40.63px;
+    }
+
+    .btn{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+        padding: 10px 30px;
+    }
+
+    .hero__available{
+        padding: 40px;
+    }
+
+    .available__title{
+        margin-bottom: 15px;
+    }
+}    
+
+@media screen and (max-width: 511px){
+
+    .container, .buy-the-game__info__container {
+        max-width: 230px;
+    }
+
+    .play-and-win__form input, .input__wrapper{
+        max-width: 230px;
+    }
+
+    .header__social{
+        gap: 15px;
+    }
+
+    .buy-the-game__info__platform{
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+
+    .buy-the-game__info__platform svg{
+        height: 25px;
+    }
+
+    .footer__top__logo img, .header__logo{
+        height: 40px;
+    }
+
+
+    h2,h3 {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30.63px;
+    }
+}
+
+@media screen and (max-width: 331px){
+    .hero__available{
+        padding: 25px;
+        
+    }
+
+    .available__title{
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        padding: 10px 20px;
+    }
+
+    .slider__arrows button{
+        padding: 0 25px;
+        max-height: 20px;
+    }
+}    
